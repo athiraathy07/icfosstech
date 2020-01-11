@@ -1,0 +1,89 @@
+\documentclass[12pt]{book}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{multicol}
+\usepackage{algorithm2e}
+\begin{document}
+\title{mathematical typesetting}
+\author{marktwain}
+\maketitle
+\chapter{equations}
+\section{inline mode}
+linear equation:$ x+y=0 $ and $x^{31} $
+\section{displayed mode}
+\underline{un numbered}\\
+in physics,the mass-energy equivalance is stated by the equation $$ E=mc^2 $$ discovered in 1905by Albert Einstein\\
+\begin{equation*}
+E=m
+\end{equation*}
+
+\section{Aligning Equations}
+\begin{align*}
+x + 3y + 4z &=2 \\
+ 3y - 4z &= 5 \\
+ 3 &= 4
+ \end{align*}
+ 
+\section{fractions}
+$ \frac{x+3}{4} $
+
+ \section{subscript and superscript}
+$ a_{11} $
+$$ x=\frac{-b \pm  \sqrt{b^2-4ac}} {2a}$$
+
+\section{special characters}
+\{ \& \}  
+ 
+\section{matrices}
+1.plain\\
+
+$$
+\begin{vmatrix}
+1 & 2 & 3\\
+a & b & c
+\end{vmatrix}
+$$
+\section{display style}
+in-line math element $f(x) = \frac{1}{1+x}$ can be set with different style: $f(x) =  \displaystyle \frac{1}{1+x}$
+
+\section{drawing lines} 
+
+\begin{tikzpicture}
+\draw (0,0)--(0,5);
+\end{tikzpicture}
+
+\vspace{3cm}
+
+\begin{tikzpicture}
+\draw (5,0) -- (-5,0)
+      (0,2) -- (0,-2);
+      \end {tikzpicture}
+
+\begin{tikzpicture}
+\draw (0,0) rectangle (4,4);
+\end{tikzpicture}
+
+\begin{tikzpicture}
+\draw (0,0)parabola (5,5);
+\end{tikzpicture}
+
+\begin{multicols}{2}
+the equations in the defined paragraph the equations in the defined paragraph the equations in the defined paragraph the equations in the defined paragraph the equations in the defined paragraph the equations in the defined paragraph the equations in the defined paragraph the equations in the defined paragraph
+\end{multicols}
+
+\begin{algorithm}
+\caption{algorithm caption}
+\KwResult{Res1}
+
+\end{algorithm}
+
+
+
+
+
+
+
+
+
+
+\end{document}

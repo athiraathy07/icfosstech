@@ -1,0 +1,53 @@
+\documentclass[12pt]{report} % define document
+\usepackage{sectsty}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{enumitem}
+\chapterfont{\centering}
+
+\begin{document}
+\title{\textbf{latex documentation}}
+\author{\textit{icfoss}}
+\date{20 january, 2020 }
+\maketitle
+
+\chapter{latex}
+figure in \ref{a:L1}
+\section*{sect 1}
+the \textit{\textbf{first document}} is included in here with the following statements.
+\subsection{sub12 }\subsubsection{sub sub 1}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{/home/user10/Desktop/SA/Test.jpg}
+\caption{panda}
+\label{a:L1}
+\end{figure}
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+NAME & AGE & GENDER\\
+\hline
+ab & 12 & F\\
+\hline
+cd & 22 & M\\
+\hline
+ef & 32 & F\\
+\hline
+\end{tabular}
+\end{center}
+\section{listing of elements}
+\begin{enumerate}[label=\alph*]
+\item first point
+\item second point
+\item third point
+\end{enumerate}
+
+
+
+\chapter{github}
+\section*{sect 2}
+the first document is included in here with the following statements.
+\subsection*{sub 2}the first document is included in here with the following statements.
+
+\end{document}
+
